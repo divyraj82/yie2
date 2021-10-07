@@ -9,7 +9,7 @@ const {events}=require('../Model/events');
 
 router.post('/createevent',async (req, res) => {
 
-    console.log("jii");
+
 
     let m1 = new events({description:req.body.description,event_time:req.body.event_time,name:req.body.name,
     public_view:req.body.public_view,user_id:req.body.user_id});
